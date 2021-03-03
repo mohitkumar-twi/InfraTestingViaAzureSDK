@@ -1,0 +1,8 @@
+# Default ignored files
+/workspace.xml
+.idea
+target
+src/main/resources/tmp
+logs/
+src/test/resources/.DS_Store
+src/test/resources/data/.DS_Store
