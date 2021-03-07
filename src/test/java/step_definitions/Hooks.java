@@ -12,16 +12,15 @@ public class Hooks extends BaseSteps {
     public static Logger logger = Logger.getLogger(Hooks.class);
 
     @Before
-    public void authenticationForInfraTesting(Scenario scenario)
-    {
-        if(scenario.getSourceTagNames().contains("@infraTesting")){
-            AzureAuthentication azureAuth  = new AzureAuthentication();
-        }
+    public void authenticationForInfraTesting(Scenario scenario) {
+
+        AzureAuthentication azureAuth = new AzureAuthentication();
+
     }
 
 
     @After
-    public void clearData(Scenario scenario){
+    public void clearData(Scenario scenario) {
 
     }
 

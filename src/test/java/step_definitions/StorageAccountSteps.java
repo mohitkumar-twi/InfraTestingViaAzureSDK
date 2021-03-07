@@ -1,3 +1,4 @@
+/*
 //TODO :
 package step_definitions;
 
@@ -107,7 +108,7 @@ public class StorageAccountSteps extends BaseSteps {
     public void i_Upload_DLT_Log_File_to_DLT_Storage_Account(String logFileName) throws InterruptedException {
         blobContainerClient = dltStorageAccount.getDLTBlobContainerClient();
         String UUID = java.util.UUID.randomUUID().toString();
-        UUIDFile = dltStorageAccount.storingFileToTMP(logFileName,UUID);
+        //UUIDFile = dltStorageAccount.storingFileToTMP(logFileName,UUID);
         dltStorageAccount.uploadDLTLogFile(UUIDFile, blobContainerClient);
         Thread.sleep(30000);
     }
@@ -120,3 +121,4 @@ public class StorageAccountSteps extends BaseSteps {
     }
 
 }
+*/

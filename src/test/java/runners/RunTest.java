@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"},
-        tags = {"@API"},
+        tags = {"@keyvault"},
         monochrome = true)
 
 public class RunTest {

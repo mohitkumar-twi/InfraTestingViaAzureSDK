@@ -1,10 +1,6 @@
 package Utils;
 
-import Components.KibanaDashboard;
-import org.apache.log4j.Logger;
-
 import java.io.*;
-import java.time.Clock;
 import java.util.Properties;
 
 public class ConfigReader {

@@ -22,15 +22,15 @@ public class KeyVaultSteps extends BaseSteps {
     @Then("^i validate if the \"([^\"]*)\" keyvault  is present$")
     public void i_validate_if_the_keyvault_is_present(String Vault) throws Exception {
         boolean isKeyVaultPresent = false;
-        String acualKeyVaultName = keyvault.getComponentperEnvironment(Vault);
+        String actualKeyVaultName = keyvault.getComponentperEnvironment(Vault);
         for (int i = 0; i < keys.size(); i++) {
-            if (keys.get(i).name().equals(acualKeyVaultName)) {
+            if (keys.get(i).name().equals(actualKeyVaultName)) {
                 isKeyVaultPresent = true;
                 indexOfKeyVault = i;
             }
         }
         logger.info("Index of " + keys.get(indexOfKeyVault).name() + " is " + indexOfKeyVault);
-        Assert.assertEquals("Key Vault " + acualKeyVaultName + " is not present.", true, isKeyVaultPresent);
+        Assert.assertEquals("Key Vault " + actualKeyVaultName + " is not present.", true, isKeyVaultPresent);
 
     }
 }

@@ -4,45 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.daimler.swf</groupId>
+    <groupId>com.vodqa.infra</groupId>
     <artifactId>InfraTestingVodQa</artifactId>
-    <name>${project.artifactId}</name>
     <version>1.0-SNAPSHOT</version>
 
-    <profiles>
-
-        <profile>
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <env>dev</env>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>prod</id>
-            <properties>
-                <env>prod</env>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>nonprod</id>
-            <properties>
-                <env>nonprod</env>
-            </properties>
-        </profile>
-
-    </profiles>
-
-
     <build>
-
-        <filters>
-            <filter>src/main/resources/tmp/${env}.config.properties</filter>
-        </filters>
 
         <resources>
             <resource>
